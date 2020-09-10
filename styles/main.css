@@ -145,7 +145,10 @@ main {
         width: max-content;
         text-decoration: none;
         font-weight: 500;
-        margin: 20px 0 20px 0; }
+        margin: 20px 0 20px 0;
+        transition: background 0.25s ease-out; }
+        main .painting .painting-content .view-gallery-link:hover {
+          background: #f7dacf; }
   main .drywall {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -187,6 +190,43 @@ main {
         width: max-content;
         text-decoration: none;
         font-weight: 500;
-        margin: 20px 0 20px 0; }
+        margin: 20px 0 20px 0;
+        transition: background 0.25s ease-out; }
+        main .drywall .drywall-content .view-gallery-link:hover {
+          background: #f7dacf; }
+
+@media screen and (max-width: 50em) {
+  main h1 {
+    line-height: 1.4em;
+    font-size: 2.8rem; }
+  main .hero-image-container {
+    align-items: flex-start;
+    height: auto;
+    margin-bottom: 18vw; }
+  main .painting {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr; }
+    main .painting .painting-content {
+      margin: 0; }
+  main .drywall {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr; }
+    main .drywall .drywall-image-container {
+      grid-row: 1;
+      grid-column: 1; }
+    main .drywall .drywall-content {
+      margin: 0; } }
+
+@media screen and (max-width: 25.875em) {
+  main h1 {
+    font-size: 2.2rem; }
+  main .painting .painting-content h2 {
+    font-size: 2.2rem; }
+  main .painting .painting-content p {
+    font-size: 1.1rem; }
+  main .drywall .drywall-content h2 {
+    font-size: 2.2rem; }
+  main .drywall .drywall-content p {
+    font-size: 1.1rem; } }
 
 /*# sourceMappingURL=main.css.map */
