@@ -1,0 +1,122 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 3vw;
+    h1 {
+        font-family: $poppins;
+        font-size: 4rem;
+        color: $secondaryColor;
+        width: 100%;
+        text-align: right;
+        padding: 10px;
+        line-height: 1.8em;
+    }
+    .hero-image-container {
+        width: 100%;
+        height: 800px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        img {
+            max-width: 100%;
+        }
+    }
+    .painting {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 800px;
+        overflow: hidden;
+        width: 100%;
+        margin: 6vw 0;
+        .painting-image-container {
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            img {
+                max-width: 100%;
+            }
+        }
+        .painting-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 6vw;
+            h2 {
+                font-family: $poppins;
+                font-size: 2.8rem;
+                color: $secondaryColor;
+                margin: 20px 0 20px 0;
+            }
+            p {
+                font-family: $esteban;
+                font-size: 1.5rem;
+                line-height: 1.8em;
+                color: $secondaryColor;
+                margin: 20px 0 20px 0;
+            }
+            .view-gallery-link {
+                background: $primaryColor;
+                font-family: $poppins;
+                color: $black;
+                padding: 1.3em;
+                font-size: 1.1rem;
+                width: max-content;
+                text-decoration: none;
+                font-weight: 500;
+                margin: 20px 0 20px 0;
+            }
+        }
+    }
+    .drywall {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 800px;
+        overflow: hidden;
+        width: 100%;
+        margin: 3vw 0;
+        .drywall-image-container {
+            grid-column: 2;
+            grid-row: 1;
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            img {
+                max-width: 100%;
+            }
+        }
+        .drywall-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 3vw;
+            h2 {
+                font-family: $poppins;
+                font-size: 2.8rem;
+                color: $secondaryColor;
+                margin: 20px 0 20px 0;
+            }
+            p {
+                font-family: $esteban;
+                font-size: 1.5rem;
+                line-height: 1.8em;
+                color: $secondaryColor;
+                margin: 20px 0 20px 0;
+            }
+            .view-gallery-link {
+                background: $primaryColor;
+                font-family: $poppins;
+                color: $black;
+                padding: 1.3em;
+                font-size: 1.1rem;
+                width: max-content;
+                text-decoration: none;
+                font-weight: 500;
+                margin: 20px 0 20px 0;
+            }
+        }
+    }
+}

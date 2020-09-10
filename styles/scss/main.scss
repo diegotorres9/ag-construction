@@ -1,0 +1,10 @@
+// Variables
+@import 'variables';
+// Base
+@import 'base/reset';
+@import 'base/base';
+// Layout
+@import 'layout/header.scss';
+@import 'layout/footer.scss';
+// Page Specific Layout
+@import 'pages/home.scss';

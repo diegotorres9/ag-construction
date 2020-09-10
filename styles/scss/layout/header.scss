@@ -1,0 +1,18 @@
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    // background-color: green; 
+    img {
+        max-width: 100%;
+        max-height: 100px;
+    }
+    .menu {
+        display: flex;
+        a {
+            font-family: $esteban;
+            text-decoration: none;
+            padding: 20px;
+        }
+    }
+}
