@@ -84,6 +84,13 @@ footer {
     footer .contact-us-link:hover {
       background: #404040; }
 
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3vw; }
+  .image-gallery img {
+    max-width: 100%; }
+
 main {
   display: flex;
   flex-direction: column;
