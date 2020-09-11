@@ -57,7 +57,8 @@ header {
     header .menu a {
       font-family: "Esteban", serif;
       text-decoration: none;
-      padding: 20px; }
+      padding: 20px;
+      color: #083f72; }
 
 footer {
   width: 100%;
@@ -235,5 +236,51 @@ main {
     font-size: 2.2rem; }
   main .drywall .drywall-content p {
     font-size: 1.1rem; } }
+
+main .contact-us-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr; }
+  main .contact-us-grid .contact-us-image-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: auto; }
+    main .contact-us-grid .contact-us-image-container img {
+      max-width: 100%; }
+  main .contact-us-grid .contact-us-info {
+    display: flex;
+    flex-direction: column; }
+    main .contact-us-grid .contact-us-info h1 {
+      text-align: start;
+      margin: 0;
+      padding: 0; }
+    main .contact-us-grid .contact-us-info .email-link {
+      font-family: "Esteban", serif;
+      font-size: 1.1rem;
+      line-height: 1.8em;
+      color: #083f72; }
+    main .contact-us-grid .contact-us-info p {
+      font-family: "Esteban", serif;
+      color: #083f72;
+      line-height: 1.8em;
+      font-size: 1.1rem; }
+
+@media screen and (min-width: 50em) {
+  main .contact-us-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr; }
+    main .contact-us-grid .contact-us-image-container {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      height: 600px;
+      overflow: hidden; }
+    main .contact-us-grid .contact-us-info {
+      margin: 3vw; }
+      main .contact-us-grid .contact-us-info p {
+        font-size: 1.5rem; }
+      main .contact-us-grid .contact-us-info .email-link {
+        font-size: 1.5rem; } }
 
 /*# sourceMappingURL=main.css.map */
