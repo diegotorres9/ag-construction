@@ -96,6 +96,25 @@ footer {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); } }
 
+.fullscreen-mobile-menu {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow-x: hidden;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .fullscreen-mobile-menu .menu a {
+    font-family: "Esteban", serif;
+    font-size: 2.2rem;
+    line-height: 1.8em;
+    color: #083f72;
+    text-decoration: none; }
+
 main {
   display: flex;
   flex-direction: column;
@@ -249,7 +268,8 @@ main .contact-us-grid {
     width: 100%;
     display: flex;
     align-items: center;
-    height: auto; }
+    height: 400px;
+    overflow: hidden; }
     main .contact-us-grid .contact-us-image-container img {
       max-width: 100%; }
   main .contact-us-grid .contact-us-info {
