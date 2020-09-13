@@ -1,9 +1,7 @@
-window.addEventListener('resize', mobileMenu);
-
-function mobileMenu () {
+var menuIcon = document.getElementById('hamburger-icon');
+function showMobileMenu () {
     var screenWidth = window.innerWidth;
     var fullscreenMenu = document.getElementById('menu');
-    var menuIcon = document.getElementById('hamburger-icon');
     // console.log(screenWidth);
     if(screenWidth <= 500) {
         fullscreenMenu.classList.add('hide');
@@ -12,25 +10,17 @@ function mobileMenu () {
         fullscreenMenu.classList.remove('hide');
         menuIcon.classList.add('hide');
     }
-    // var windowSize = window.scrollX;
-    
-    // console.log(screenWidth);
-    // if(screenWidth <= 500) {
-    //     fullscreenMenu.classList.add('hide');
-    // }
 }
-mobileMenu();
+showMobileMenu();
+window.addEventListener('resize', showMobileMenu);
 
-// function hideMenu() {
-//     var fullscreenMenu = document.getElementById('menu');
-//     var screenWidth = window.screen.width;
-
-//     if(screenWidth <= 500) {
-//         fullscreenMenu.classList.add('hide');
-//     } else {
-//         console.log('screen is not 500px');
-//     }
-// }
-// hideMenu();
-// console.log(screenWidth);
-// console.log(fullscreenMenu);
+// ------------------------------------------------ 
+function openMenu() {
+    var fullscreenMobileMenu = document.getElementById('fullscreen-mobile-menu');
+    menuIcon.addEventListener('click', () => {
+        // console.log(this.menuIcon);
+        fullscreenMobileMenu.classList.add('height');
+        // fullscreenMobileMenu.style.width = "100%" && fullscreenMobileMenu.classList.add('width');
+    });
+}
+openMenu();
