@@ -1,4 +1,5 @@
 var menuIcon = document.getElementById('hamburger-icon');
+var fullscreenMobileMenu = document.getElementById('fullscreen-mobile-menu');
 function showMobileMenu () {
     var screenWidth = window.innerWidth;
     var fullscreenMenu = document.getElementById('menu');
@@ -16,11 +17,18 @@ window.addEventListener('resize', showMobileMenu);
 
 // ------------------------------------------------ 
 function openMenu() {
-    var fullscreenMobileMenu = document.getElementById('fullscreen-mobile-menu');
     menuIcon.addEventListener('click', () => {
-        // console.log(this.menuIcon);
         fullscreenMobileMenu.classList.add('height');
-        // fullscreenMobileMenu.style.width = "100%" && fullscreenMobileMenu.classList.add('width');
+        menuIcon.classList.toggle('active');
     });
 }
 openMenu();
+// -------------------------------------------------
+// function closeMenu() {
+//     if(fullscreenMobileMenu.style.width === "100%") {
+//         menuIcon.addEventListener('click', () => {
+//             fullscreenMobileMenu.classList.remove('height');
+//         })
+//     }
+// }
+// closeMenu();

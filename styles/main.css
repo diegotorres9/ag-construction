@@ -77,6 +77,24 @@ header {
   top: -9999px !important;
   left: -9999px !important; }
 
+.active .ham-icon-top {
+  animation: 0.55s forwards rotate-top; }
+
+.active .ham-icon-bottom {
+  animation: 0.55s  forwards rotate-bottom; }
+
+@keyframes rotate-top {
+  from {
+    transform: rotate(0) translate(0, 0); }
+  to {
+    transform: rotate(-45deg) translate(-2px, 2px); } }
+
+@keyframes rotate-bottom {
+  from {
+    transform: rotate(0) translate(0, 0); }
+  to {
+    transform: rotate(45deg) translate(-2px, -3px); } }
+
 @media screen and (max-width: 31.25em) {
   header {
     justify-content: space-between; } }
