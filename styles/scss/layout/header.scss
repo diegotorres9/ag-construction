@@ -2,7 +2,8 @@ header {
     width: 100%;
     display: flex;
     align-items: center;
-    // background-color: green; 
+    z-index: 2;
+    // position: fixed;
     img {
         max-width: 100%;
         max-height: 100px;
@@ -16,4 +17,27 @@ header {
             color: $secondaryColor;
         }
     }
+    .hamburger-icon {
+        width: 35px;
+        height: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-right: 9vw;
+        .ham-icon {
+            background-color: $secondaryColor;
+            height: 1px;
+            width: 100%;
+        }
+    }
+}
+.hide {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+}
+@media screen and (max-width: 31.250em) {
+    header {
+        justify-content: space-between;
+    }   
 }
