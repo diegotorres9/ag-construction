@@ -4,6 +4,12 @@ main {
     align-items: center;
     justify-content: center;
     margin: 3vw;
+    p {
+        font-family: $esteban;
+        font-size: 1.5rem;
+        line-height: 1.8em;
+        color: $secondaryColor;
+    }
     h1 {
         font-family: $poppins;
         font-size: 4rem;

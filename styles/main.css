@@ -168,6 +168,11 @@ main {
   align-items: center;
   justify-content: center;
   margin: 3vw; }
+  main p {
+    font-family: "Esteban", serif;
+    font-size: 1.5rem;
+    line-height: 1.8em;
+    color: #083f72; }
   main h1 {
     font-family: "Poppins", sans-serif;
     font-size: 4rem;
