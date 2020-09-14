@@ -44,6 +44,7 @@ main {
             flex-direction: column;
             justify-content: center;
             margin: 6vw;
+            // transform: translateX(65%) scale(0.95);
             h2 {
                 font-family: $poppins;
                 font-size: 2.8rem;
@@ -127,6 +128,20 @@ main {
             }
         }
     }
+}
+.slideInRight {
+    transform: translateX(-95%) scale(0.95);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+.slideInLeft {
+    transform: translateX(95%) scale(0.95);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+.slideInScroll {
+    opacity: 1;
+    transform:  translateX(0%) scale(1);
 }
 @media screen and (max-width: 50em) {
     main {

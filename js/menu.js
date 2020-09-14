@@ -12,7 +12,7 @@ function showMobileMenu () {
     }
 }
 showMobileMenu();
-window.addEventListener('resize', showMobileMenu);
+window.addEventListener('resize', debounce(showMobileMenu));
 
 // ------------------------------------------------ 
 function openMenu() {
@@ -25,6 +25,7 @@ function openMenu() {
             fullscreenMobileMenu.classList.remove('height');
             fullscreenMobileMenu.classList.add('remove-height');
         }
+
     });
 }
 openMenu();

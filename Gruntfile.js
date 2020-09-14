@@ -16,6 +16,9 @@ module.exports = function(grunt) {
             }
         },
         autoprefixer: {
+            options: {
+                browsers: ['last 2 versions', 'ie 8', 'ie 9']
+            },
             dist: {
                 files: {
                     'styles/main.css':'styles/main.css'
@@ -23,11 +26,8 @@ module.exports = function(grunt) {
             }
         },
         concat: {
-            options: {
-                separator: ';',
-            },
             dist: {
-                src: ['js/menu.js', 'js/scrollAnimation.js'],
+                src: ['js/debounce.js', 'js/menu.js', 'js/scrollAnimation.js'],
                 dest: 'js/scripts.js',
             }
         },
@@ -36,8 +36,8 @@ module.exports = function(grunt) {
                 files: ['**/*.scss'],
                 tasks: ['sass']
             },
-            scripts: {
-                files: ['**/*.js'],
+            js: {
+                files: ['js/**/*.js'],
                 tasks: ['concat']
             }
         }

@@ -273,6 +273,20 @@ main {
         main .drywall .drywall-content .view-gallery-link:hover {
           background: #f7dacf; }
 
+.slideInRight {
+  transform: translateX(-95%) scale(0.95);
+  opacity: 0;
+  transition: all 1s ease-in-out; }
+
+.slideInLeft {
+  transform: translateX(95%) scale(0.95);
+  opacity: 0;
+  transition: all 1s ease-in-out; }
+
+.slideInScroll {
+  opacity: 1;
+  transform: translateX(0%) scale(1); }
+
 @media screen and (max-width: 50em) {
   main h1 {
     line-height: 1.4em;
