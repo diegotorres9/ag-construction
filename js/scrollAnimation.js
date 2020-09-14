@@ -26,7 +26,6 @@ function drywallSlide() {
     var drywallContent = document.querySelector('.drywall-content');
 
     var drywallSlideInAt = (window.scrollY + window.innerHeight) - drywallContainer.offsetHeight / 2;
-    console.log(drywallSlideInAt);
     var drywallContainerBottom = drywallContainer.offsetTop + drywallContainer.offsetHeight;
     var halfShown = drywallSlideInAt > drywallContainer.offsetTop;
     var notScrolledPast = window.scrollY < drywallContainerBottom;
