@@ -5,6 +5,8 @@ main {
     justify-content: center;
     margin: 3vw;
     p {
+        margin: 3vw 0;
+        align-self: center;
         font-family: $esteban;
         font-size: 1.5rem;
         line-height: 1.8em;
@@ -35,7 +37,7 @@ main {
         height: 800px;
         overflow: hidden;
         width: 100%;
-        margin: 6vw 0;
+        margin-bottom: 3vw;
         .painting-image-container {
             width: 100%;
             overflow: hidden;
@@ -187,7 +189,6 @@ main {
         .hero-image-container {
             align-items: flex-start;
             height: auto;
-            margin-bottom: 18vw;
         }
         .painting {
             grid-template-columns: 1fr;
@@ -213,6 +214,9 @@ main {
     main {
         h1 {
             font-size: 2.2rem;
+        }
+        p {
+            margin-bottom: 3vw;
         }
         .painting {
             .painting-content {

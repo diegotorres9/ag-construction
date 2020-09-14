@@ -160,6 +160,8 @@ main {
   justify-content: center;
   margin: 3vw; }
   main p {
+    margin: 3vw 0;
+    align-self: center;
     font-family: "Esteban", serif;
     font-size: 1.5rem;
     line-height: 1.8em;
@@ -186,7 +188,7 @@ main {
     height: 800px;
     overflow: hidden;
     width: 100%;
-    margin: 6vw 0; }
+    margin-bottom: 3vw; }
     main .painting .painting-image-container {
       width: 100%;
       overflow: hidden;
@@ -315,8 +317,7 @@ main {
     font-size: 2.8rem; }
   main .hero-image-container {
     align-items: flex-start;
-    height: auto;
-    margin-bottom: 18vw; }
+    height: auto; }
   main .painting {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr; }
@@ -334,6 +335,8 @@ main {
 @media screen and (max-width: 25.875em) {
   main h1 {
     font-size: 2.2rem; }
+  main p {
+    margin-bottom: 3vw; }
   main .painting .painting-content h2 {
     font-size: 2.2rem; }
   main .painting .painting-content p {
