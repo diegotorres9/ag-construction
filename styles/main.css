@@ -107,6 +107,7 @@ footer {
   justify-content: center; }
   footer p {
     font-family: "Poppins", sans-serif;
+    color: #083f72;
     font-size: 1.1rem;
     font-weight: 500;
     letter-spacing: 0.02em;
