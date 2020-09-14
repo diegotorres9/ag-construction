@@ -12,7 +12,7 @@ function debounce(func, wait, immediate) {
 		timeout = setTimeout(later, wait);
 		if (callNow) func.apply(context, args);
 	};
-};
+}
 var menuIcon = document.getElementById('hamburger-icon');
 var fullscreenMobileMenu = document.getElementById('fullscreen-mobile-menu');
 function showMobileMenu () {
