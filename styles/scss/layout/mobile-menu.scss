@@ -25,3 +25,7 @@
     transition: height 0.55s ease-in-out;
     // bottom: 0;
 }
+.remove-height {
+    height: 0;
+    transition: height 0.5s ease-in-out;
+}

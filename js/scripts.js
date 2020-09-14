@@ -18,8 +18,15 @@ window.addEventListener('resize', showMobileMenu);
 // ------------------------------------------------ 
 function openMenu() {
     menuIcon.addEventListener('click', () => {
-        fullscreenMobileMenu.classList.add('height');
         menuIcon.classList.toggle('active');
+        if(!fullscreenMobileMenu.classList.contains('height')){
+            fullscreenMobileMenu.classList.add('height');
+            fullscreenMobileMenu.classList.remove('remove-height');
+        } else {
+            fullscreenMobileMenu.classList.remove('height');
+            fullscreenMobileMenu.classList.add('remove-height');
+        }
+        // fullscreenMobileMenu.classList.add('height');
     });
 }
 openMenu();

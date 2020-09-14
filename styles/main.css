@@ -158,6 +158,10 @@ footer {
   height: 100%;
   transition: height 0.55s ease-in-out; }
 
+.remove-height {
+  height: 0;
+  transition: height 0.5s ease-in-out; }
+
 main {
   display: flex;
   flex-direction: column;
