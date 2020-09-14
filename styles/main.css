@@ -340,7 +340,9 @@ main {
   main .drywall .drywall-content h2 {
     font-size: 2.2rem; }
   main .drywall .drywall-content p {
-    font-size: 1.1rem; } }
+    font-size: 1.1rem; }
+  .free-estimates-block p {
+    font-size: 1.8rem; } }
 
 main .contact-us-grid {
   display: grid;
