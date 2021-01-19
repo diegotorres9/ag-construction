@@ -9,122 +9,152 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-  display: block; }
+  display: block;
+}
 
 body {
-  line-height: 1; }
+  line-height: 1;
+}
 
 ol, ul {
-  list-style: none; }
+  list-style: none;
+}
 
 blockquote, q {
-  quotes: none; }
+  quotes: none;
+}
 
 blockquote:before, blockquote:after {
-  content: '';
-  content: none; }
+  content: "";
+  content: none;
+}
 
 q:before, q:after {
-  content: '';
-  content: none; }
+  content: "";
+  content: none;
+}
 
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
 body {
   display: flex;
   flex-direction: column;
-  height: 100%; }
-  body main {
-    flex: 1 0 auto; }
-  body header, body footer {
-    flex: none; }
+  height: 100%;
+}
+body main {
+  flex: 1 0 auto;
+}
+body header, body footer {
+  flex: none;
+}
 
 header {
   width: 100%;
   display: flex;
   align-items: center;
-  z-index: 2; }
-  header img {
-    max-width: 100%;
-    max-height: 100px; }
-  header .menu {
-    display: flex; }
-    header .menu a {
-      font-family: "Esteban", serif;
-      text-decoration: none;
-      padding: 20px;
-      color: #083f72; }
-  header .hamburger-icon {
-    width: 35px;
-    height: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin-right: 9vw; }
-    header .hamburger-icon .ham-icon {
-      background-color: #083f72;
-      height: 1px;
-      width: 100%; }
+  z-index: 2;
+}
+header img {
+  max-width: 100%;
+  max-height: 100px;
+}
+header .menu {
+  display: flex;
+}
+header .menu a {
+  font-family: "Esteban", serif;
+  text-decoration: none;
+  padding: 20px;
+  color: #083f72;
+}
+header .hamburger-icon {
+  width: 35px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-right: 9vw;
+}
+header .hamburger-icon .ham-icon {
+  background-color: #083f72;
+  height: 1px;
+  width: 100%;
+}
 
 .hide {
   position: absolute !important;
   top: -9999px !important;
-  left: -9999px !important; }
+  left: -9999px !important;
+}
 
 .active .ham-icon-top {
-  animation: 0.55s forwards rotate-top; }
-
+  animation: 0.55s forwards rotate-top;
+}
 .active .ham-icon-bottom {
-  animation: 0.55s  forwards rotate-bottom; }
+  animation: 0.55s forwards rotate-bottom;
+}
 
 @keyframes rotate-top {
   from {
-    transform: rotate(0) translate(0, 0); }
+    transform: rotate(0) translate(0, 0);
+  }
   to {
-    transform: rotate(-45deg) translate(-2px, 2px); } }
-
+    transform: rotate(-45deg) translate(-2px, 2px);
+  }
+}
 @keyframes rotate-bottom {
   from {
-    transform: rotate(0) translate(0, 0); }
+    transform: rotate(0) translate(0, 0);
+  }
   to {
-    transform: rotate(45deg) translate(-2px, -3px); } }
-
+    transform: rotate(45deg) translate(-2px, -3px);
+  }
+}
 @media screen and (max-width: 31.25em) {
   header {
-    justify-content: space-between; } }
-
+    justify-content: space-between;
+  }
+}
 footer {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; }
-  footer p {
-    font-family: "Poppins", sans-serif;
-    color: #083f72;
-    font-size: 1.1rem;
-    font-weight: 500;
-    letter-spacing: 0.02em;
-    line-height: 1.3rem;
-    text-align: center;
-    margin: 3vw 0 3vw 0; }
+  justify-content: center;
+}
+footer p {
+  font-family: "Poppins", sans-serif;
+  color: #083f72;
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.3rem;
+  text-align: center;
+  margin: 3vw 0 3vw 0;
+}
 
 .image-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-  gap: 3vw; }
-  .image-gallery img {
-    max-width: 100%; }
-  @media screen and (max-width: 500px) {
-    .image-gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); } }
+  gap: 3vw;
+}
+.image-gallery img {
+  max-width: 100%;
+}
+@media screen and (max-width: 500px) {
+  .image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
 
 .fullscreen-mobile-menu {
   width: 100%;
@@ -137,139 +167,175 @@ footer {
   background: white;
   display: flex;
   align-items: center;
-  justify-content: center; }
-  .fullscreen-mobile-menu .menu a {
-    font-family: "Esteban", serif;
-    font-size: 2.2rem;
-    line-height: 1.8em;
-    color: #083f72;
-    text-decoration: none; }
+  justify-content: center;
+}
+.fullscreen-mobile-menu .menu a {
+  font-family: "Esteban", serif;
+  font-size: 2.2rem;
+  line-height: 1.8em;
+  color: #083f72;
+  text-decoration: none;
+}
 
 .height {
   height: 100%;
-  transition: height 0.55s ease-in-out; }
+  transition: height 0.55s ease-in-out;
+}
 
 .remove-height {
   height: 0;
-  transition: height 0.5s ease-in-out; }
+  transition: height 0.5s ease-in-out;
+}
+
+.hero {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/painting/IMG-7066.jpg");
+  background-position: center;
+}
 
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 3vw; }
-  main p {
-    margin: 3vw 0;
-    align-self: center;
-    font-family: "Esteban", serif;
-    font-size: 1.5rem;
-    line-height: 1.8em;
-    color: #083f72; }
-  main h1 {
-    font-family: "Poppins", sans-serif;
-    font-size: 4rem;
-    color: #083f72;
-    width: 100%;
-    text-align: right;
-    padding: 10px;
-    line-height: 1.8em; }
-  main .hero-image-container {
-    width: 100%;
-    height: 800px;
-    overflow: hidden;
-    display: flex;
-    align-items: center; }
-    main .hero-image-container img {
-      max-width: 100%; }
-  main .painting {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 800px;
-    overflow: hidden;
-    width: 100%;
-    margin-bottom: 3vw; }
-    main .painting .painting-image-container {
-      width: 100%;
-      overflow: hidden;
-      display: flex;
-      align-items: center; }
-      main .painting .painting-image-container img {
-        max-width: 100%; }
-    main .painting .painting-content {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      margin: 6vw; }
-      main .painting .painting-content h2 {
-        font-family: "Poppins", sans-serif;
-        font-size: 2.8rem;
-        color: #083f72;
-        margin: 20px 0 20px 0; }
-      main .painting .painting-content p {
-        font-family: "Esteban", serif;
-        font-size: 1.5rem;
-        line-height: 1.8em;
-        color: #083f72;
-        margin: 20px 0 20px 0; }
-      main .painting .painting-content .view-gallery-link {
-        background: #f3cab9;
-        font-family: "Poppins", sans-serif;
-        color: black;
-        padding: 1.3em;
-        font-size: 1.1rem;
-        width: max-content;
-        text-decoration: none;
-        font-weight: 500;
-        margin: 20px 0 20px 0;
-        transition: background 0.25s ease-out; }
-        main .painting .painting-content .view-gallery-link:hover {
-          background: #f7dacf; }
-  main .drywall {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 800px;
-    overflow: hidden;
-    width: 100%;
-    margin: 3vw 0; }
-    main .drywall .drywall-image-container {
-      grid-column: 2;
-      grid-row: 1;
-      width: 100%;
-      overflow: hidden;
-      display: flex;
-      align-items: center; }
-      main .drywall .drywall-image-container img {
-        max-width: 100%; }
-    main .drywall .drywall-content {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      margin: 3vw; }
-      main .drywall .drywall-content h2 {
-        font-family: "Poppins", sans-serif;
-        font-size: 2.8rem;
-        color: #083f72;
-        margin: 20px 0 20px 0; }
-      main .drywall .drywall-content p {
-        font-family: "Esteban", serif;
-        font-size: 1.5rem;
-        line-height: 1.8em;
-        color: #083f72;
-        margin: 20px 0 20px 0; }
-      main .drywall .drywall-content .view-gallery-link {
-        background: #f3cab9;
-        font-family: "Poppins", sans-serif;
-        color: black;
-        padding: 1.3em;
-        font-size: 1.1rem;
-        width: max-content;
-        text-decoration: none;
-        font-weight: 500;
-        margin: 20px 0 20px 0;
-        transition: background 0.25s ease-out; }
-        main .drywall .drywall-content .view-gallery-link:hover {
-          background: #f7dacf; }
+  margin: 3vw;
+}
+main p {
+  margin: 3vw 0;
+  align-self: center;
+  font-family: "Esteban", serif;
+  font-size: 1.5rem;
+  line-height: 1.8em;
+  color: #083f72;
+}
+main h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 4rem;
+  color: #083f72;
+  width: 100%;
+  text-align: right;
+  padding: 10px;
+  line-height: 1.8em;
+}
+main .hero-image-container {
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+main .hero-image-container img {
+  max-width: 100%;
+}
+main .painting {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 800px;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 3vw;
+}
+main .painting .painting-image-container {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+main .painting .painting-image-container img {
+  max-width: 100%;
+}
+main .painting .painting-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 6vw;
+}
+main .painting .painting-content h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.8rem;
+  color: #083f72;
+  margin: 20px 0 20px 0;
+}
+main .painting .painting-content p {
+  font-family: "Esteban", serif;
+  font-size: 1.5rem;
+  line-height: 1.8em;
+  color: #083f72;
+  margin: 20px 0 20px 0;
+}
+main .painting .painting-content .view-gallery-link {
+  background: #f3cab9;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  padding: 1.3em;
+  font-size: 1.1rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 20px 0 20px 0;
+  transition: background 0.25s ease-out;
+}
+main .painting .painting-content .view-gallery-link:hover {
+  background: #f7dacf;
+}
+main .drywall {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 800px;
+  overflow: hidden;
+  width: 100%;
+  margin: 3vw 0;
+}
+main .drywall .drywall-image-container {
+  grid-column: 2;
+  grid-row: 1;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+main .drywall .drywall-image-container img {
+  max-width: 100%;
+}
+main .drywall .drywall-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 3vw;
+}
+main .drywall .drywall-content h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.8rem;
+  color: #083f72;
+  margin: 20px 0 20px 0;
+}
+main .drywall .drywall-content p {
+  font-family: "Esteban", serif;
+  font-size: 1.5rem;
+  line-height: 1.8em;
+  color: #083f72;
+  margin: 20px 0 20px 0;
+}
+main .drywall .drywall-content .view-gallery-link {
+  background: #f3cab9;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  padding: 1.3em;
+  font-size: 1.1rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 20px 0 20px 0;
+  transition: background 0.25s ease-out;
+}
+main .drywall .drywall-content .view-gallery-link:hover {
+  background: #f7dacf;
+}
 
 .free-estimates-block {
   margin: 0 !important;
@@ -278,121 +344,156 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; }
-  .free-estimates-block p {
-    font-family: "Poppins", sans-serif;
-    font-size: 2.8rem;
-    font-weight: 500;
-    letter-spacing: 0.02em;
-    margin: 80px 0 20px 0; }
-  .free-estimates-block .contact-us-link {
-    padding: 1.3em;
-    background: black;
-    color: #f3cab9;
-    font-family: "Poppins", sans-serif;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    margin: 20px 0 80px 0;
-    transition: background 0.25s ease-out; }
-    .free-estimates-block .contact-us-link:hover {
-      background: #404040; }
+  justify-content: center;
+}
+.free-estimates-block p {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.8rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  margin: 80px 0 20px 0;
+}
+.free-estimates-block .contact-us-link {
+  padding: 1.3em;
+  background: black;
+  color: #f3cab9;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  margin: 20px 0 80px 0;
+  transition: background 0.25s ease-out;
+}
+.free-estimates-block .contact-us-link:hover {
+  background: #404040;
+}
 
 .slideInRight {
   transform: translateX(-95%) scale(0.95);
   opacity: 0;
-  transition: all 1s ease-in-out; }
+  transition: all 1s ease-in-out;
+}
 
 .slideInLeft {
   transform: translateX(95%) scale(0.95);
   opacity: 0;
-  transition: all 1s ease-in-out; }
+  transition: all 1s ease-in-out;
+}
 
 .slideInScroll {
   opacity: 1;
-  transform: translateX(0%) scale(1); }
+  transform: translateX(0%) scale(1);
+}
 
 @media screen and (max-width: 50em) {
   main h1 {
     line-height: 1.4em;
-    font-size: 2.8rem; }
+    font-size: 2.8rem;
+  }
   main .hero-image-container {
     align-items: flex-start;
-    height: auto; }
+    height: auto;
+  }
   main .painting {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr; }
-    main .painting .painting-content {
-      margin: 0; }
+    grid-template-rows: 1fr 1fr;
+  }
+  main .painting .painting-content {
+    margin: 0;
+  }
   main .drywall {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr; }
-    main .drywall .drywall-image-container {
-      grid-row: 1;
-      grid-column: 1; }
-    main .drywall .drywall-content {
-      margin: 0; } }
-
+    grid-template-rows: 1fr 1fr;
+  }
+  main .drywall .drywall-image-container {
+    grid-row: 1;
+    grid-column: 1;
+  }
+  main .drywall .drywall-content {
+    margin: 0;
+  }
+}
 @media screen and (max-width: 25.875em) {
   main h1 {
-    font-size: 2.2rem; }
+    font-size: 2.2rem;
+  }
   main p {
-    margin-bottom: 3vw; }
+    margin-bottom: 3vw;
+  }
   main .painting .painting-content h2 {
-    font-size: 2.2rem; }
+    font-size: 2.2rem;
+  }
   main .painting .painting-content p {
-    font-size: 1.1rem; }
+    font-size: 1.1rem;
+  }
   main .drywall .drywall-content h2 {
-    font-size: 2.2rem; }
+    font-size: 2.2rem;
+  }
   main .drywall .drywall-content p {
-    font-size: 1.1rem; }
-  .free-estimates-block p {
-    font-size: 1.8rem; } }
+    font-size: 1.1rem;
+  }
 
+  .free-estimates-block p {
+    font-size: 1.8rem;
+  }
+}
 main .contact-us-grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr; }
-  main .contact-us-grid .contact-us-image-container {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    height: 400px;
-    overflow: hidden; }
-    main .contact-us-grid .contact-us-image-container img {
-      max-width: 100%; }
-  main .contact-us-grid .contact-us-info {
-    display: flex;
-    flex-direction: column; }
-    main .contact-us-grid .contact-us-info h1 {
-      text-align: start;
-      margin: 0;
-      padding: 0; }
-    main .contact-us-grid .contact-us-info .email-link {
-      font-family: "Esteban", serif;
-      font-size: 1.1rem;
-      line-height: 1.8em;
-      color: #083f72; }
-    main .contact-us-grid .contact-us-info p {
-      font-family: "Esteban", serif;
-      color: #083f72;
-      line-height: 1.8em;
-      font-size: 1.1rem; }
+  grid-template-rows: 1fr 1fr;
+}
+main .contact-us-grid .contact-us-image-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 400px;
+  overflow: hidden;
+}
+main .contact-us-grid .contact-us-image-container img {
+  max-width: 100%;
+}
+main .contact-us-grid .contact-us-info {
+  display: flex;
+  flex-direction: column;
+}
+main .contact-us-grid .contact-us-info h1 {
+  text-align: start;
+  margin: 0;
+  padding: 0;
+}
+main .contact-us-grid .contact-us-info .email-link {
+  font-family: "Esteban", serif;
+  font-size: 1.1rem;
+  line-height: 1.8em;
+  color: #083f72;
+}
+main .contact-us-grid .contact-us-info p {
+  font-family: "Esteban", serif;
+  color: #083f72;
+  line-height: 1.8em;
+  font-size: 1.1rem;
+}
 
 @media screen and (min-width: 50em) {
   main .contact-us-grid {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr; }
-    main .contact-us-grid .contact-us-image-container {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      height: 600px;
-      overflow: hidden; }
-    main .contact-us-grid .contact-us-info {
-      margin: 3vw; }
-      main .contact-us-grid .contact-us-info p {
-        font-size: 1.5rem; }
-      main .contact-us-grid .contact-us-info .email-link {
-        font-size: 1.5rem; } }
+    grid-template-rows: 1fr;
+  }
+  main .contact-us-grid .contact-us-image-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 600px;
+    overflow: hidden;
+  }
+  main .contact-us-grid .contact-us-info {
+    margin: 3vw;
+  }
+  main .contact-us-grid .contact-us-info p {
+    font-size: 1.5rem;
+  }
+  main .contact-us-grid .contact-us-info .email-link {
+    font-size: 1.5rem;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
