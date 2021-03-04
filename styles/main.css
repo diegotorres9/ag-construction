@@ -62,13 +62,14 @@ header {
   align-items: center;
   justify-content: space-between;
   z-index: 2;
-  margin: 50px 25px 0 25px;
+  margin: 0 2vw;
   justify-self: stretch;
   align-self: start;
 }
 header img {
   max-width: 100%;
   max-height: 100px;
+  align-self: flex-start;
 }
 header .menu {
   display: flex;
@@ -411,6 +412,16 @@ main .contact-us-grid .contact-us-info p {
   main .contact-us-grid .contact-us-info .email-link {
     font-size: 1.5rem;
   }
+}
+main {
+  margin: 0 2vw;
+}
+main h1 {
+  text-align: right;
+  font: 700 48px "futura-pt-condensed", sans-serif;
+  text-transform: uppercase;
+  color: #232c42;
+  margin: 1vw 0;
 }
 
 /*# sourceMappingURL=main.css.map */
