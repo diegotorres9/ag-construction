@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Esteban&family=Poppins:wght@400;500&display=swap');
+@import url('href="https://use.typekit.net/hzp2lbn.css"');
 
 $poppins: 'Poppins', sans-serif;
 $esteban: 'Esteban', serif;
 
+$futuraMedium: 'futura-pt-condensed', sans-serif;
+$futuraBold: 'futura-pt-condensed', sans-serif; 
+
 // colors
-$primaryColor: hsl(17, 71%, 84%);
-$secondaryColor: hsl(209, 87%, 24%);
+$primaryColor: #e1cfc0;
+$secondaryColor: #232c42;
 $black: hsl(0, 0, 0);

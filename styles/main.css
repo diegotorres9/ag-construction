@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Esteban&family=Poppins:wght@400;500&display=swap");
+@import url('href="https://use.typekit.net/hzp2lbn.css"');
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -57,10 +58,13 @@ body header, body footer {
 }
 
 header {
-  width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   z-index: 2;
+  margin: 50px 25px 0 25px;
+  justify-self: stretch;
+  align-self: start;
 }
 header img {
   max-width: 100%;
@@ -70,10 +74,12 @@ header .menu {
   display: flex;
 }
 header .menu a {
-  font-family: "Esteban", serif;
+  font-family: "futura-pt-condensed", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
   text-decoration: none;
-  padding: 20px;
-  color: #083f72;
+  padding: 10px;
+  color: #232c42;
 }
 header .hamburger-icon {
   width: 35px;
@@ -84,7 +90,7 @@ header .hamburger-icon {
   margin-right: 9vw;
 }
 header .hamburger-icon .ham-icon {
-  background-color: #083f72;
+  background-color: #232c42;
   height: 1px;
   width: 100%;
 }
@@ -96,18 +102,36 @@ header .hamburger-icon .ham-icon {
 }
 
 .active .ham-icon-top {
+  -webkit-animation: 0.55s forwards rotate-top;
   animation: 0.55s forwards rotate-top;
 }
 .active .ham-icon-bottom {
+  -webkit-animation: 0.55s forwards rotate-bottom;
   animation: 0.55s forwards rotate-bottom;
 }
 
+@-webkit-keyframes rotate-top {
+  from {
+    transform: rotate(0) translate(0, 0);
+  }
+  to {
+    transform: rotate(-45deg) translate(-2px, 2px);
+  }
+}
 @keyframes rotate-top {
   from {
     transform: rotate(0) translate(0, 0);
   }
   to {
     transform: rotate(-45deg) translate(-2px, 2px);
+  }
+}
+@-webkit-keyframes rotate-bottom {
+  from {
+    transform: rotate(0) translate(0, 0);
+  }
+  to {
+    transform: rotate(45deg) translate(-2px, -3px);
   }
 }
 @keyframes rotate-bottom {
@@ -126,19 +150,25 @@ header .hamburger-icon .ham-icon {
 footer {
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-}
-footer p {
-  font-family: "Poppins", sans-serif;
-  color: #083f72;
+  font-family: "futura-pt-condensed", sans-serif;
+  color: #232c42;
   font-size: 1.1rem;
   font-weight: 500;
+}
+footer p {
   letter-spacing: 0.02em;
   line-height: 1.3rem;
   text-align: center;
-  margin: 3vw 0 3vw 0;
+  margin: 1.5vw 0 1.5vw 0;
+}
+footer p:nth-child(2) {
+  margin: 0 10px;
+}
+footer span {
+  margin: 0 10px;
 }
 
 .image-gallery {
@@ -173,7 +203,7 @@ footer p {
   font-family: "Esteban", serif;
   font-size: 2.2rem;
   line-height: 1.8em;
-  color: #083f72;
+  color: #232c42;
   text-decoration: none;
 }
 
@@ -189,253 +219,140 @@ footer p {
 
 .hero {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-image: url("../images/painting/IMG-7066.jpg");
   background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
 }
-
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 3vw;
-}
-main p {
-  margin: 3vw 0;
+.hero h1 {
+  font: 700 32px "futura-pt-condensed", sans-serif;
+  text-transform: uppercase;
+  color: #232c42;
+  margin-left: 25px;
   align-self: center;
-  font-family: "Esteban", serif;
-  font-size: 1.5rem;
-  line-height: 1.8em;
-  color: #083f72;
 }
-main h1 {
-  font-family: "Poppins", sans-serif;
-  font-size: 4rem;
-  color: #083f72;
-  width: 100%;
-  text-align: right;
-  padding: 10px;
-  line-height: 1.8em;
-}
-main .hero-image-container {
-  width: 100%;
-  height: 800px;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-}
-main .hero-image-container img {
-  max-width: 100%;
-}
-main .painting {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  height: 800px;
-  overflow: hidden;
-  width: 100%;
-  margin-bottom: 3vw;
-}
-main .painting .painting-image-container {
-  width: 100%;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-}
-main .painting .painting-image-container img {
-  max-width: 100%;
-}
-main .painting .painting-content {
+
+.info-blocks {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin: 6vw;
+  margin: 144px 85px;
 }
-main .painting .painting-content h2 {
-  font-family: "Poppins", sans-serif;
-  font-size: 2.8rem;
-  color: #083f72;
-  margin: 20px 0 20px 0;
-}
-main .painting .painting-content p {
-  font-family: "Esteban", serif;
-  font-size: 1.5rem;
-  line-height: 1.8em;
-  color: #083f72;
-  margin: 20px 0 20px 0;
-}
-main .painting .painting-content .view-gallery-link {
-  background: #f3cab9;
-  font-family: "Poppins", sans-serif;
-  color: black;
-  padding: 1.3em;
-  font-size: 1.1rem;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  text-decoration: none;
-  font-weight: 500;
-  margin: 20px 0 20px 0;
-  transition: background 0.25s ease-out;
-}
-main .painting .painting-content .view-gallery-link:hover {
-  background: #f7dacf;
-}
-main .drywall {
+.info-blocks .painting-section {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  height: 800px;
-  overflow: hidden;
-  width: 100%;
-  margin: 3vw 0;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  margin-bottom: 55px;
 }
-main .drywall .drywall-image-container {
+.info-blocks .painting-section div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 156px;
   grid-column: 2;
-  grid-row: 1;
-  width: 100%;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
 }
-main .drywall .drywall-image-container img {
+.info-blocks .painting-section img {
   max-width: 100%;
+  height: auto;
+  align-self: center;
+  justify-self: center;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.2);
 }
-main .drywall .drywall-content {
+.info-blocks .painting-section h2 {
+  font: 700 48px "futura-pt-condensed", sans-serif;
+  color: #232c42;
+}
+.info-blocks .painting-section p {
+  font: 500 20px "futura-pt-condensed", sans-serif;
+  text-align: center;
+  margin: 100px 0;
+  width: clamp(450px, 500px, 600px);
+  line-height: 30px;
+  text-align: left;
+}
+.info-blocks .painting-section button {
+  width: 183px;
+  height: 47px;
+  grid-column: 2;
+  font: 700 20px "futura-pt-condensed", sans-serif;
+  text-transform: uppercase;
+  border: none;
+  background-color: #e1cfc0;
+  color: #3b3b3b;
+}
+.info-blocks .drywall-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+}
+.info-blocks .drywall-section div {
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
   justify-content: center;
-  margin: 3vw;
+  margin-right: 156px;
+  grid-column: 1;
+  grid-row: 1;
 }
-main .drywall .drywall-content h2 {
-  font-family: "Poppins", sans-serif;
-  font-size: 2.8rem;
-  color: #083f72;
-  margin: 20px 0 20px 0;
+.info-blocks .drywall-section img {
+  max-width: 100%;
+  height: auto;
+  align-self: center;
+  justify-self: center;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.2);
+  grid-column-start: 2;
 }
-main .drywall .drywall-content p {
-  font-family: "Esteban", serif;
-  font-size: 1.5rem;
-  line-height: 1.8em;
-  color: #083f72;
-  margin: 20px 0 20px 0;
+.info-blocks .drywall-section h2 {
+  font: 700 48px "futura-pt-condensed", sans-serif;
+  color: #232c42;
+  text-align: right;
 }
-main .drywall .drywall-content .view-gallery-link {
-  background: #f3cab9;
-  font-family: "Poppins", sans-serif;
-  color: black;
-  padding: 1.3em;
-  font-size: 1.1rem;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  text-decoration: none;
-  font-weight: 500;
-  margin: 20px 0 20px 0;
-  transition: background 0.25s ease-out;
+.info-blocks .drywall-section p {
+  font: 500 20px "futura-pt-condensed", sans-serif;
+  text-align: center;
+  margin: 100px 0;
+  width: clamp(450px, 500px, 600px);
+  line-height: 30px;
+  text-align: right;
 }
-main .drywall .drywall-content .view-gallery-link:hover {
-  background: #f7dacf;
+.info-blocks .drywall-section button {
+  width: 183px;
+  height: 47px;
+  grid-column: 2;
+  font: 700 20px "futura-pt-condensed", sans-serif;
+  text-transform: uppercase;
+  border: none;
+  background-color: #e1cfc0;
+  color: #3b3b3b;
 }
 
-.free-estimates-block {
-  margin: 0 !important;
-  width: 100%;
-  background-color: #f3cab9;
+.estimates-block {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #e1cfc0;
+  height: 200px;
+  width: 100%;
 }
-.free-estimates-block p {
-  font-family: "Poppins", sans-serif;
-  font-size: 2.8rem;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  margin: 80px 0 20px 0;
+.estimates-block h2 {
+  font: 700 48px "futura-pt-condensed", sans-serif;
+  color: #232c42;
 }
-.free-estimates-block .contact-us-link {
-  padding: 1.3em;
-  background: black;
-  color: #f3cab9;
-  font-family: "Poppins", sans-serif;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  margin: 20px 0 80px 0;
-  transition: background 0.25s ease-out;
-}
-.free-estimates-block .contact-us-link:hover {
-  background: #404040;
+.estimates-block button {
+  margin-top: 20px;
+  width: 183px;
+  height: 47px;
+  grid-column: 2;
+  font: 500 20px "futura-pt-condensed", sans-serif;
+  text-transform: uppercase;
+  border: none;
+  background-color: #3b3b3b;
+  color: #fff;
 }
 
-.slideInRight {
-  transform: translateX(-95%) scale(0.95);
-  opacity: 0;
-  transition: all 1s ease-in-out;
-}
-
-.slideInLeft {
-  transform: translateX(95%) scale(0.95);
-  opacity: 0;
-  transition: all 1s ease-in-out;
-}
-
-.slideInScroll {
-  opacity: 1;
-  transform: translateX(0%) scale(1);
-}
-
-@media screen and (max-width: 50em) {
-  main h1 {
-    line-height: 1.4em;
-    font-size: 2.8rem;
-  }
-  main .hero-image-container {
-    align-items: flex-start;
-    height: auto;
-  }
-  main .painting {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
-  main .painting .painting-content {
-    margin: 0;
-  }
-  main .drywall {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
-  main .drywall .drywall-image-container {
-    grid-row: 1;
-    grid-column: 1;
-  }
-  main .drywall .drywall-content {
-    margin: 0;
-  }
-}
-@media screen and (max-width: 25.875em) {
-  main h1 {
-    font-size: 2.2rem;
-  }
-  main p {
-    margin-bottom: 3vw;
-  }
-  main .painting .painting-content h2 {
-    font-size: 2.2rem;
-  }
-  main .painting .painting-content p {
-    font-size: 1.1rem;
-  }
-  main .drywall .drywall-content h2 {
-    font-size: 2.2rem;
-  }
-  main .drywall .drywall-content p {
-    font-size: 1.1rem;
-  }
-
-  .free-estimates-block p {
-    font-size: 1.8rem;
-  }
-}
 main .contact-us-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -464,11 +381,11 @@ main .contact-us-grid .contact-us-info .email-link {
   font-family: "Esteban", serif;
   font-size: 1.1rem;
   line-height: 1.8em;
-  color: #083f72;
+  color: #232c42;
 }
 main .contact-us-grid .contact-us-info p {
   font-family: "Esteban", serif;
-  color: #083f72;
+  color: #232c42;
   line-height: 1.8em;
   font-size: 1.1rem;
 }

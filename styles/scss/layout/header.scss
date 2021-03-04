@@ -1,8 +1,12 @@
 header {
-    width: 100%;
+    // width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     z-index: 2;
+    margin: 50px 25px 0 25px;
+    justify-self: stretch;
+    align-self: start;
     // position: fixed;
     img {
         max-width: 100%;
@@ -11,9 +15,11 @@ header {
     .menu {
         display: flex;
         a {
-            font-family: $esteban;
+            font-family: $futuraMedium;
+            font-size: 1rem;
+            text-transform: uppercase;
             text-decoration: none;
-            padding: 20px;
+            padding: 10px;
             color: $secondaryColor;
         }
     }
@@ -38,11 +44,21 @@ header {
 }
 .active {
     .ham-icon-top {
-        animation: 0.55s forwards rotate-top;
+        -webkit-animation: 0.55s forwards rotate-top;
+                animation: 0.55s forwards rotate-top;
     }
     .ham-icon-bottom {
-        animation: 0.55s  forwards rotate-bottom;
+        -webkit-animation: 0.55s  forwards rotate-bottom;
+                animation: 0.55s  forwards rotate-bottom;
     }
+}
+@-webkit-keyframes rotate-top {
+        from {
+            transform: rotate(0) translate(0,0);
+        }
+        to {
+            transform: rotate(-45deg) translate(-2px, 2px);
+        }
 }
 @keyframes rotate-top {
         from {
@@ -51,6 +67,14 @@ header {
         to {
             transform: rotate(-45deg) translate(-2px, 2px);
         }
+}
+@-webkit-keyframes rotate-bottom {
+    from {
+        transform: rotate(0) translate(0,0);
+    }
+    to {
+        transform: rotate(45deg) translate(-2px, -3px);
+    }
 }
 @keyframes rotate-bottom {
     from {
