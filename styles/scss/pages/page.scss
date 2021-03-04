@@ -1,0 +1,18 @@
+// header {
+//     display: flex;
+//     justify-content: space-between;
+//     width: 100%;
+//     img {
+//         align-self: flex-start;
+//     }
+// }
+main {
+    margin: 0 2vw;
+    h1 {
+        text-align: right;
+        font: 700 48px $futuraBold;
+        text-transform: uppercase;
+        color: $secondaryColor;
+        margin: 1vw 0;
+    }
+}
