@@ -158,12 +158,12 @@ header .hamburger-icon .ham-icon {
 footer {
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-family: "futura-pt-condensed", sans-serif;
   color: #232c42;
-  font-size: 1.1rem;
+  font-size: 16px;
   font-weight: 500;
 }
 footer p {
@@ -309,6 +309,7 @@ footer span {
 .info-blocks .drywall-section div h2 {
   font: 700 24px "futura-pt-condensed", sans-serif;
   color: #232c42;
+  text-align: center;
 }
 .info-blocks .drywall-section div p {
   font: 500 16px "futura-pt-condensed", sans-serif;
@@ -418,10 +419,10 @@ main {
 }
 main h1 {
   text-align: right;
-  font: 700 48px "futura-pt-condensed", sans-serif;
+  font: 700 36px "futura-pt-condensed", sans-serif;
   text-transform: uppercase;
   color: #232c42;
-  margin: 1vw 0;
+  margin: 2vw 0;
 }
 
 /*# sourceMappingURL=main.css.map */
