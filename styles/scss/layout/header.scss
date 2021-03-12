@@ -11,7 +11,7 @@ header {
     // display: flex;
     // align-items: flex-start;
     // justify-content: space-between;
-    // z-index: 2;
+    z-index: 2;
     // margin: 1vw 2vw;
     // height: auto;
     .menu {
@@ -37,6 +37,7 @@ header {
         }
     }
     .hamburger-icon {
+        align-self: center;
         width: 35px;
         height: 20px;
         display: flex;
