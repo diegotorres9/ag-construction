@@ -66,6 +66,7 @@ header {
   height: -moz-min-content;
   height: min-content;
   margin: 0 2vw;
+  z-index: 2;
 }
 header .menu {
   display: flex;
@@ -88,6 +89,7 @@ header .menu a {
   color: #232c42;
 }
 header .hamburger-icon {
+  align-self: center;
   width: 35px;
   height: 20px;
   display: flex;
@@ -233,7 +235,7 @@ footer span {
   display: grid;
 }
 .hero h1 {
-  font: 700 32px "futura-pt-condensed", sans-serif;
+  font: 700 24px "futura-pt-condensed", sans-serif;
   text-transform: uppercase;
   color: #232c42;
   margin-left: 25px;
@@ -244,95 +246,87 @@ footer span {
 .info-blocks {
   display: flex;
   flex-direction: column;
-  margin: 144px 2vw;
+  align-items: center;
+  justify-content: center;
+  margin: 4vw 2vw;
 }
 .info-blocks .painting-section {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  margin-bottom: 55px;
-}
-.info-blocks .painting-section div {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
   justify-content: center;
-  margin-left: 156px;
-  grid-column: 2;
 }
 .info-blocks .painting-section img {
   max-width: 100%;
   height: auto;
-  align-self: center;
-  justify-self: center;
-  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.2);
 }
-.info-blocks .painting-section h2 {
-  font: 700 48px "futura-pt-condensed", sans-serif;
+.info-blocks .painting-section div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.info-blocks .painting-section div h2 {
+  font: 700 24px "futura-pt-condensed", sans-serif;
   color: #232c42;
 }
-.info-blocks .painting-section p {
-  font: 500 20px "futura-pt-condensed", sans-serif;
+.info-blocks .painting-section div p {
+  font: 500 16px "futura-pt-condensed", sans-serif;
   text-align: center;
-  margin: 100px 0;
-  width: clamp(450px, 500px, 600px);
-  line-height: 30px;
-  text-align: left;
+  margin: 25px 0;
+  line-height: 20px;
 }
-.info-blocks .painting-section button {
-  width: 183px;
-  height: 47px;
-  grid-column: 2;
+.info-blocks .painting-section div button {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: auto;
   font: 700 20px "futura-pt-condensed", sans-serif;
   text-transform: uppercase;
   border: none;
   background-color: #e1cfc0;
   color: #3b3b3b;
+  padding: 20px 10px;
 }
 .info-blocks .drywall-section {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-}
-.info-blocks .drywall-section div {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
   justify-content: center;
-  margin-right: 156px;
-  grid-column: 1;
-  grid-row: 1;
 }
 .info-blocks .drywall-section img {
   max-width: 100%;
   height: auto;
-  align-self: center;
-  justify-self: center;
-  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.2);
-  grid-column-start: 2;
 }
-.info-blocks .drywall-section h2 {
-  font: 700 48px "futura-pt-condensed", sans-serif;
+.info-blocks .drywall-section div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.info-blocks .drywall-section div h2 {
+  font: 700 24px "futura-pt-condensed", sans-serif;
   color: #232c42;
-  text-align: right;
 }
-.info-blocks .drywall-section p {
-  font: 500 20px "futura-pt-condensed", sans-serif;
+.info-blocks .drywall-section div p {
+  font: 500 16px "futura-pt-condensed", sans-serif;
   text-align: center;
-  margin: 100px 0;
-  width: clamp(450px, 500px, 600px);
-  line-height: 30px;
-  text-align: right;
+  margin: 25px 0;
+  line-height: 20px;
 }
-.info-blocks .drywall-section button {
-  width: 183px;
-  height: 47px;
-  grid-column: 2;
+.info-blocks .drywall-section div button {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: auto;
   font: 700 20px "futura-pt-condensed", sans-serif;
   text-transform: uppercase;
   border: none;
   background-color: #e1cfc0;
   color: #3b3b3b;
+  padding: 20px 10px;
 }
 
 .estimates-block {
@@ -345,7 +339,7 @@ footer span {
   width: 100%;
 }
 .estimates-block h2 {
-  font: 700 48px "futura-pt-condensed", sans-serif;
+  font: 700 36px "futura-pt-condensed", sans-serif;
   color: #232c42;
 }
 .estimates-block button {
