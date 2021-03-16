@@ -60,6 +60,12 @@
                 text-decoration: none;
             }
         }
+        @include tablet-breakpoint {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr;
+            margin-bottom: 4vw;
+        }
     }
     .drywall-section {
         display: grid;
@@ -67,15 +73,28 @@
         grid-template-rows: repeat(2, 1fr);
         align-items: center;
         justify-content: center;
+        @include tablet-breakpoint {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr;
+            margin-top: 4vw;
+        }
         img {
             max-width: 100%;
             height: auto;
+            // @include tablet-breakpoint {
+            //     grid-column: 2;
+            // }
         }
         div {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            @include tablet-breakpoint {
+                grid-column: 1;
+                grid-row: 1;
+            }
             h2 {
                 font: 700 24px $futuraBold;
                 color: $secondaryColor;
