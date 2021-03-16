@@ -75,7 +75,8 @@ header .menu {
 }
 header img {
   max-width: 100%;
-  max-height: 100px;
+  max-height: 80px;
+  margin: 2vw 0;
 }
 header .menu li {
   display: flex;
@@ -277,7 +278,7 @@ footer span {
   margin: 25px 0;
   line-height: 20px;
 }
-.info-blocks .painting-section div button {
+.info-blocks .painting-section div .page-link {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -288,6 +289,7 @@ footer span {
   background-color: #e1cfc0;
   color: #3b3b3b;
   padding: 20px 10px;
+  text-decoration: none;
 }
 .info-blocks .drywall-section {
   display: grid;
@@ -317,7 +319,7 @@ footer span {
   margin: 25px 0;
   line-height: 20px;
 }
-.info-blocks .drywall-section div button {
+.info-blocks .drywall-section div .page-link {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -328,6 +330,7 @@ footer span {
   background-color: #e1cfc0;
   color: #3b3b3b;
   padding: 20px 10px;
+  text-decoration: none;
 }
 
 .estimates-block {
@@ -343,16 +346,22 @@ footer span {
   font: 700 36px "futura-pt-condensed", sans-serif;
   color: #232c42;
 }
-.estimates-block button {
-  margin-top: 20px;
-  width: 183px;
-  height: 47px;
-  grid-column: 2;
-  font: 500 20px "futura-pt-condensed", sans-serif;
+.estimates-block .contact-link {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: auto;
+  font: 700 20px "futura-pt-condensed", sans-serif;
   text-transform: uppercase;
   border: none;
+  background-color: #e1cfc0;
+  color: #3b3b3b;
+  margin-top: 20px;
+  padding: 20px 10px;
+  text-decoration: none;
   background-color: #3b3b3b;
   color: #fff;
+  grid-column: 2;
 }
 
 main .contact-us-grid {
@@ -376,7 +385,7 @@ main .contact-us-grid .contact-us-info {
 }
 main .contact-us-grid .contact-us-info h1 {
   text-align: start;
-  margin: 0;
+  margin: 4vw 0;
   padding: 0;
 }
 main .contact-us-grid .contact-us-info .email-link {
