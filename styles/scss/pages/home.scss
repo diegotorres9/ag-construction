@@ -46,7 +46,7 @@
                 margin: 25px 0;
                 line-height: 20px;
             }
-            button {
+            .page-link {
                 width: -webkit-max-content;
                 width: -moz-max-content;
                 width: max-content;
@@ -57,6 +57,7 @@
                 background-color: $primaryColor;
                 color: #3b3b3b;
                 padding: 20px 10px;
+                text-decoration: none;
             }
         }
     }
@@ -86,7 +87,7 @@
                 margin: 25px 0;
                 line-height: 20px;
             }
-            button {
+            .page-link {
                 width: -webkit-max-content;
                 width: -moz-max-content;
                 width: max-content;
@@ -97,6 +98,7 @@
                 background-color: $primaryColor;
                 color: #3b3b3b;
                 padding: 20px 10px;
+                text-decoration: none;
             }
         }
     }
@@ -113,15 +115,21 @@
         font: 700 36px $futuraBold;
         color: $secondaryColor;
     }
-    button {
-        margin-top: 20px;
-        width: 183px;
-        height: 47px;
-        grid-column: 2;
-        font: 500 20px $futuraBold;
+    .contact-link {
+        width: -webkit-max-content;
+        width: -moz-max-content;
+        width: max-content;
+        height: auto;
+        font: 700 20px $futuraBold;
         text-transform: uppercase;
         border: none;
+        background-color: $primaryColor;
+        color: #3b3b3b;
+        margin-top: 20px;
+        padding: 20px 10px;
+        text-decoration: none;
         background-color: #3b3b3b;
         color: #fff;
+        grid-column: 2;
     }
 }
