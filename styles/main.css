@@ -167,6 +167,16 @@ footer {
   font-size: 16px;
   font-weight: 500;
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  footer {
+    flex-direction: row;
+  }
+}
+@media (min-width: 1024px) {
+  footer {
+    flex-direction: row;
+  }
+}
 footer p {
   letter-spacing: 0.02em;
   line-height: 1.3rem;
