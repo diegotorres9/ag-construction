@@ -8,6 +8,12 @@ footer {
     color: $secondaryColor;
     font-size: 16px;
     font-weight: 500;
+    @include tablet-breakpoint{
+        flex-direction: row;
+    }
+    @include desktop-breakpoint {
+        flex-direction: row;
+    }
     p{
         letter-spacing: 0.02em;
         line-height: 1.3rem;
