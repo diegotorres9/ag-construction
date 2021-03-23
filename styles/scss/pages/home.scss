@@ -29,7 +29,12 @@
         justify-content: center;
         img {
             max-width: 100%;
-            height: auto;
+            @include desktop-breakpoint {
+                max-width: 100%;
+                height: 80%;
+                justify-self: center;
+            }
+            box-shadow: -1px -1px 8px -5px rgba(0,0,0,0.75);
         }
         div {
             display: flex;
@@ -39,12 +44,22 @@
             h2 {
                 font: 700 24px $futuraBold;
                 color: $secondaryColor;
+                @include tablet-breakpoint {
+                    font: 700 28px $futuraBold;
+                }
+                @include desktop-breakpoint {
+                    font: 700 48px $futuraBold;
+                }
             }
             p {
                 font: 500 16px $futuraMedium;
                 text-align: center;
                 margin: 25px 0;
                 line-height: 20px;
+                @include desktop-breakpoint {
+                    font: 500 24px $futuraMedium;
+                    max-width: 600px;
+                }
             }
             .page-link {
                 width: -webkit-max-content;
@@ -66,6 +81,12 @@
             grid-template-rows: 1fr;
             margin-bottom: 4vw;
         }
+        @include desktop-breakpoint {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr;
+            margin-bottom: 3vw;
+        }
     }
     .drywall-section {
         display: grid;
@@ -77,11 +98,20 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: 1fr;
-            margin-top: 4vw;
+        }
+        @include desktop-breakpoint {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr;
         }
         img {
             max-width: 100%;
-            height: auto;
+            @include desktop-breakpoint {
+                max-width: 100%;
+                height: 80%;
+                justify-self: center;
+            }
+            box-shadow: -1px -1px 8px -5px rgba(0,0,0,0.75);
             // @include tablet-breakpoint {
             //     grid-column: 2;
             // }
@@ -95,16 +125,30 @@
                 grid-column: 1;
                 grid-row: 1;
             }
+            @include desktop-breakpoint {
+                grid-column: 1;
+                grid-row: 1;
+            }
             h2 {
                 font: 700 24px $futuraBold;
                 color: $secondaryColor;
                 text-align: center;
+                @include tablet-breakpoint {
+                    font: 700 28px $futuraBold;
+                }
+                @include desktop-breakpoint {
+                    font: 700 48px $futuraBold;
+                }
             }
             p {
                 font: 500 16px $futuraMedium;
                 text-align: center;
                 margin: 25px 0;
                 line-height: 20px;
+                @include desktop-breakpoint {
+                    font: 500 24px $futuraMedium;
+                    max-width: 600px;
+                }
             }
             .page-link {
                 width: -webkit-max-content;
