@@ -12,7 +12,7 @@ function showMobileMenu () {
     }
 }
 showMobileMenu();
-window.addEventListener('resize', debounce(showMobileMenu));
+window.addEventListener('resize', showMobileMenu());
 
 // ------------------------------------------------ 
 function openMenu() {
